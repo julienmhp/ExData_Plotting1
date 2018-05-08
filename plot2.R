@@ -1,0 +1,5 @@
+quartz()
+plot(epcc$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="",xaxt="n")
+axis(1,at=c(1,1440,2880),label=c("Thursday","Friday","Saturday"))
+dev.copy(png,file="plot2.png",width=480,height=480)
+dev.cur()
